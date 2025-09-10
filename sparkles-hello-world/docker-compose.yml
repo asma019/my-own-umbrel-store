@@ -1,14 +1,12 @@
-version: "3.7"
+version: "3.9"
 
 services:
-
-  app_proxy:
+  kasm_desktop:
+    image: kasmweb/desktop:1.17.0
+    container_name: kasm_desktop
+    ports:
+      - "6901:6901"
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
-      APP_PORT: 3000
-    
-  server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+      - VNC_PW=password
+    shm_size: "512m"
+    restart: unless-stopped
