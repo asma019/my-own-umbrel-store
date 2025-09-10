@@ -1,8 +1,8 @@
 manifestVersion: 1
 id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
+name: Ubuntu desktop
+tagline: Ubuntu desktop for Kasm Workspaces
+icon: https://hub.docker.com/api/media/repos_logo/v1/library%2Fubuntu?type=logo
 category: Development
 version: "1.0.0"
 port: 4000
@@ -27,4 +27,4 @@ releaseNotes: >-
 dependencies: []
 path: ""
 defaultUsername: ""
-defaultPassword: ""
+defaultPassword: "password"
